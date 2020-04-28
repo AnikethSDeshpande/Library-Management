@@ -10,6 +10,7 @@ frappe.ui.form.on('Library Transaction', {
 				name: frm.doc.library_member
 			},
 			callback: function(data) {
+				console.log(data)
 				frappe.model.set_value(
 					frm.doctype,
 					frm.docname,
