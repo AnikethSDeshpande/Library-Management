@@ -25,6 +25,18 @@ frappe.ui.form.on('Article', {
 		console.log(items_selected)
 	},
 
+	get_details: function(frm){
+		frm.call({
+			"method": "library_management.utils.api_functions.get_details",
+			args: {
+				msg: 'Hey, you clicked the button!'
+			}, 
+			callback: function(r){
+				alert('callback also came')
+			}
+		})
+	},
+
 	before_save: function(frm){
 		console.log('before_save called');
 	},
