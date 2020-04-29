@@ -42,7 +42,7 @@ def get_articles(search_string):
 
         article = '''
             The word {0} was used in the play named {1}, by the speaker {2}, in speech number {3},
-            line number {4}, and the dialogue was - {5}
+            line number {4}, and the dialogue was - <b>{5}</b>
         '''.format(
             search_string
             , play_name
