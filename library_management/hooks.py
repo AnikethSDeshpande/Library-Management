@@ -11,6 +11,10 @@ app_color = "grey"
 app_email = "lib.git@no_mail.com"
 app_license = "MIT"
 
+
+
+
+
 # Includes in <head>
 # ------------------
 
@@ -79,13 +83,13 @@ app_license = "MIT"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-#	}
-# }
+doc_events = {
+	"Item Finder": {
+		"after_save": "library_management.utils.api_functions.display_message",
+		# "on_cancel": "method",
+		# "on_trash": "method"
+	}
+}
 
 # Scheduled Tasks
 # ---------------
